@@ -1,13 +1,13 @@
 [
     {
-      "name": "Switch Quest",
-      "description": "Aventura estilo Zelda com mecânicas modernas.",
-      "image": "assets/images/switch-game1.png",
-      "downloadLink": "#"
+      "name": "Blasphemous",
+  "description": "Blasphemous é um implacável jogo de ação em plataformas",
+  "image": "https://m.media-amazon.com/images/I/71c2egkxgDL._AC_UF1000,1000_QL80_.jpg",
+  "downloadLink": "downloads\\Sw\\Blasphemous.rar"
     },
     {
       "name": "Mario Kart 8 Deluxe",
-      "description": "Corrida retrô com multiplayer local e trilha 8-bit!",
+      "description": "Corra com Mario e seus amigos a qualquer hora, em qualquer lugar!",
       "image": "assets/images/ps_nswitch_mariokart8deluxe_pegi.jpg",
       "downloadLink": "downloads/Sw/Mario Kart 8 Deluxe.rar"
     }

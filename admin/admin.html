@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador de Jogos | Admin</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #ff3c3c;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin-bottom: 10px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    button {
+      background-color: #ff3c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    pre {
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Gerador de JSON de Jogos</h1>
+  <form id="gameForm">
+    <label for="name">Nome do Jogo</label>
+    <input type="text" id="name" required />
+
+    <label for="desc">Descrição</label>
+    <input type="text" id="desc" required />
+
+    <label for="image">URL da Imagem</label>
+    <input type="text" id="image" placeholder="ex: assets/images/switch-game1.png" required />
+
+    <label for="link">Link de Download</label>
+    <input type="text" id="link" placeholder="ex: downloads/jogo1.zip" required />
+
+    <button type="submit">Gerar JSON</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script>
+    document.getElementById('gameForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const description = document.getElementById('desc').value.trim();
+      const image = document.getElementById('image').value.trim();
+      const downloadLink = document.getElementById('link').value.trim();
+
+      const gameBlock = {
+        name,
+        description,
+        image,
+        downloadLink
+      };
+
+      const output = JSON.stringify(gameBlock, null, 2);
+
+      document.getElementById('output').textContent = output;
+    });
+  </script>
+</body>
+</html>
