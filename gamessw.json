@@ -1,0 +1,16 @@
+[
+    {
+      "name": "Switch Quest",
+      "description": "Aventura estilo Zelda com mecânicas modernas.",
+      "image": "assets/images/switch-game1.png",
+      "downloadLink": "#"
+    },
+    {
+      "name": "Mario Kart 8 Deluxe",
+      "description": "Corrida retrô com multiplayer local e trilha 8-bit!",
+      "image": "assets/images/ps_nswitch_mariokart8deluxe_pegi.jpg",
+      "downloadLink": "downloads/Mario Kart 8 Deluxe.rar"
+    }
+
+  ]
+  
