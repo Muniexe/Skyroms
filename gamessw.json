@@ -1,16 +1,28 @@
 [
     {
       "name": "Blasphemous",
-  "description": "Blasphemous é um implacável jogo de ação em plataformas",
+  "description": "Size: 7,1 GB",
   "image": "https://m.media-amazon.com/images/I/71c2egkxgDL._AC_UF1000,1000_QL80_.jpg",
   "downloadLink": "downloads\\Sw\\Blasphemous.rar"
     },
     {
       "name": "Mario Kart 8 Deluxe",
-      "description": "Corra com Mario e seus amigos a qualquer hora, em qualquer lugar!",
+      "description": "Size: 7,4 GB",
       "image": "assets/images/ps_nswitch_mariokart8deluxe_pegi.jpg",
       "downloadLink": "downloads/Sw/Mario Kart 8 Deluxe.rar"
+    },
+    {
+      "name": "The Legend of Zelda - Ocarina of Time, native port",
+      "description": "Size: 682.6 MB",
+      "image": "assets/images/thumb_facebook_27a400cc-817e-4b53-bb44-ebe7722ad115.jpg",
+      "downloadLink": "downloads\\Sw\\Ship_of_Harkinian_The_Legend_of_Zelda_Ocarina_of_Time,_native.rar"
+    },
+    {
+      "name": "The Legend of Zelda - Breath of the Wild",
+      "description": "Size: 15.71 GB",
+      "image": "https://m.media-amazon.com/images/I/61ax3Tz3SxL._AC_UF1000,1000_QL80_.jpg",
+      "downloadLink": "downloads\\Sw\\The Legend of Zelda - Breath of the Wild.rar"
     }
-
+    
   ]
   
