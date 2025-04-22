@@ -1,0 +1,183 @@
+/* Reset e estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    background: #000;
+  }
+  
+  #bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .console-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .console-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 160px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .console-card:hover {
+    transform: scale(1.05);
+    background: rgba(0, 255, 153, 0.1);
+  }
+  
+  .console-card img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+ /* Seção de jogos */
+.games-section {
+    margin-top: 40px;
+  }
+  
+  /* Grid de jogos com 4 colunas fixas */
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Bloco de cada jogo */
+  .game-block {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 15px;  /* Menos padding */
+    box-shadow: 0 0 15px rgba(255, 60, 60, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .game-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 60, 60, 0.6);
+  }
+  
+  /* Card de cada jogo */
+  .game-card {
+    background: rgba(255, 60, 60, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: 150px;  /* Controla o tamanho da imagem */
+    object-fit: cover;  /* Mantém a imagem proporcional */
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .game-info {
+    padding: 10px; /* Menos padding para compactar */
+    text-align: center;
+  }
+  
+  .game-info h3 {
+    color: #ff3c3c;
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Fonte um pouco menor */
+  }
+  
+  .game-info p {
+    font-size: 0.85rem; /* Texto um pouco menor */
+    color: #ddd;
+    margin-bottom: 15px;
+  }
+  
+  /* Botão de download */
+  .btn {
+    background-color: #ff3c3c;
+    color: #000;
+    padding: 8px 18px;  /* Botão menor */
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff5f5f;
+  }
+  
+  /* Botão voltar */
+  .btn-back {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .btn-back:hover {
+    background-color: #666;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 1200px) {
+    .game-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .game-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .game-grid {
+      grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+  }
